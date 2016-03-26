@@ -102,12 +102,7 @@ namespace ProgIIIListas
 
         private void BtOrdenar_Click(object sender, EventArgs e)
         {
-            DvDatos.Sort(DvDatos.Columns["Cantidad"], System.ComponentModel.ListSortDirection.Descending); //Ordena de manera descendente por cantidad
-
-            while (DvDatos.Rows.Count >=7) //Los indices se usan asi porque el primer indice es cero y la ultima fila es vacia
-            {
-                DvDatos.Rows.RemoveAt(DvDatos.Rows.Count - 2); //Se borran filas ignorando la ultima (vacia) y se resta uno mas por el indice desde cero
-            }
+            obj.Ordenar(DvDatos);
             BtOrdenar.Enabled = false;
         }
     }
