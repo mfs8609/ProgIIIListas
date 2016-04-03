@@ -22,14 +22,18 @@ namespace ProgIIIListas
 
         private void BtCargar_Click(object sender, EventArgs e)
         {
-            int k = 0, x1, x2, c;
+            int k = 0, x1, x2, c, b=0;
             DvDatos.Rows.Clear();
             vcade.Clear();
-            using (StreamReader BLectura = new StreamReader("Articulos.csv"))
+            using (StreamReader BLectura = new StreamReader("INVENTARIO REPETIDO..csv"))
             {
                 while (!BLectura.EndOfStream)
                 {
-                    BLectura.ReadLine();
+                    if (b == 0)
+                    {
+                        BLectura.ReadLine();
+                        b = 1;
+                    }
                     vcade.Add(BLectura.ReadLine());
                     DvDatos.Rows.Add();
                     x1 = x2 = c = 0;
@@ -46,6 +50,7 @@ namespace ProgIIIListas
                 }
             }
             BtOrdenar.Enabled = true;
+            BtRepetidos.Enabled = true;
         }
 
         private void DvDatos_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -104,6 +109,26 @@ namespace ProgIIIListas
         {
             obj.Ordenar(DvDatos);
             BtOrdenar.Enabled = false;
+        }
+
+        private void BtRepetidos_Click(object sender, EventArgs e)
+        {
+            BtRepetidos.Enabled = false;
+            string comp = DvDatos.Rows[0].Cells[1].Value.ToString();
+            int i = 1;
+            while (i <= DvDatos.Rows.Count - 1)
+            {
+                for (int j = i; j <= DvDatos.Rows.Count - 1 - 1; j++)
+                {
+                    if (DvDatos.Rows[j].Cells[1].Value.ToString() == comp)
+                    {
+                        DvDatos.Rows.RemoveAt(j);
+                    }
+                }
+                if(i < DvDatos.Rows.Count - 1)
+                    comp = DvDatos.Rows[i].Cells[1].Value.ToString();
+                i++;
+            }
         }
     }
 }

@@ -16,3 +16,12 @@ C:\Users\Manuel\Desktop\ProgIIIListas\git\ProgIIIListas\ProgIIIListas\obj\Debug\
 C:\Users\Manuel\Desktop\ProgIIIListas\git\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.Form1.resources
 C:\Users\Manuel\Desktop\ProgIIIListas\git\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.Properties.Resources.resources
 C:\Users\Manuel\Desktop\ProgIIIListas\git\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.csproj.GenerateResource.Cache
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\bin\Debug\ProgIIIListas.exe.config
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.exe
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.pdb
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\bin\Debug\ProgIIIListas.exe
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\bin\Debug\ProgIIIListas.pdb
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.csprojResolveAssemblyReference.cache
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.Form1.resources
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.Properties.Resources.resources
+C:\Users\Manuel\Desktop\ProgIIIListas\ProgIIIListas\obj\Debug\ProgIIIListas.csproj.GenerateResource.Cache

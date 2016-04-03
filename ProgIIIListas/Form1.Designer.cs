@@ -48,6 +48,7 @@
             this.BtActualizar = new System.Windows.Forms.Button();
             this.BtBorrar = new System.Windows.Forms.Button();
             this.BtOrdenar = new System.Windows.Forms.Button();
+            this.BtRepetidos = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,11 +218,23 @@
             this.BtOrdenar.UseVisualStyleBackColor = true;
             this.BtOrdenar.Click += new System.EventHandler(this.BtOrdenar_Click);
             // 
+            // BtRepetidos
+            // 
+            this.BtRepetidos.Enabled = false;
+            this.BtRepetidos.Location = new System.Drawing.Point(443, 379);
+            this.BtRepetidos.Name = "BtRepetidos";
+            this.BtRepetidos.Size = new System.Drawing.Size(112, 23);
+            this.BtRepetidos.TabIndex = 15;
+            this.BtRepetidos.Text = "Eliminar Repetidos";
+            this.BtRepetidos.UseVisualStyleBackColor = true;
+            this.BtRepetidos.Click += new System.EventHandler(this.BtRepetidos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(575, 468);
+            this.Controls.Add(this.BtRepetidos);
             this.Controls.Add(this.BtOrdenar);
             this.Controls.Add(this.BtBorrar);
             this.Controls.Add(this.BtActualizar);
@@ -267,6 +280,7 @@
         private System.Windows.Forms.Button BtActualizar;
         private System.Windows.Forms.Button BtBorrar;
         private System.Windows.Forms.Button BtOrdenar;
+        private System.Windows.Forms.Button BtRepetidos;
     }
 }
 
